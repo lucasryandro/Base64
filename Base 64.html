@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js.js"></script>
+    <title>Conversor de Base64</title>
+    <link rel="shortcut icon" href="images/programacao-da-web.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <h1>Conversor de Base64</h1>
+    <form>
+      <label>
+        Texto em Base64:
+        <textarea id="base64-input" rows="5"></textarea>
+      </label>
+      <button type="button" onclick="decodeBase64()">Decodificar</button>
+      <label>
+        Texto decodificado:
+        <textarea id="decoded-text" rows="5"></textarea>
+      </label>
+      <button type="button" onclick="contaVogaisConsoantes()">Contar vogais e consoantes</button>
+      <div class="result">
+        <p>Vogais: <span id="vowel-count"></span></p>
+        <p>Consoantes: <span id="consonant-count"></span></p>
+      </div>
+    </form>
+  </body>
+</html>
